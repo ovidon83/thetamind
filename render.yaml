@@ -4,8 +4,9 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: cd landing && npm install && npm run build
-    startCommand: cd landing && npm start
+    rootDir: landing
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     healthCheckPath: /
     envVars:
       - key: NODE_ENV
