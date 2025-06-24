@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: thetamind-landing
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd landing && npm ci && npm run build
+    startCommand: cd landing && npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+    domains:
+      - thetamind.onrender.com 
