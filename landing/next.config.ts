@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Production optimizations
-  output: 'standalone',
   compress: true,
   poweredByHeader: false,
   
@@ -10,11 +9,6 @@ const nextConfig: NextConfig = {
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
-  },
-  
-  // Performance optimizations
-  experimental: {
-    optimizeCss: true,
   },
   
   // Security headers

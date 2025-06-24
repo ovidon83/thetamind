@@ -319,7 +319,7 @@ export default function Page() {
                         <div className="w-10 h-10 bg-purple-200 rounded-lg flex items-center justify-center">🧘‍♀️</div>
                         <div className="flex-1">
                           <p className="font-semibold text-gray-900">Morning Meditation</p>
-                          <p className="text-sm text-gray-600">Sarah's Garden • 0.3 miles</p>
+                          <p className="text-sm text-gray-600">Sarah&apos;s Garden • 0.3 miles</p>
                         </div>
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Today 7am</span>
                       </div>
@@ -337,7 +337,7 @@ export default function Page() {
                         <div className="w-10 h-10 bg-indigo-200 rounded-lg flex items-center justify-center">✨</div>
                         <div className="flex-1">
                           <p className="font-semibold text-gray-900">Healing Circle</p>
-                          <p className="text-sm text-gray-600">Mark's Backyard • 1.2 miles</p>
+                          <p className="text-sm text-gray-600">Mark&apos;s Backyard • 1.2 miles</p>
                         </div>
                         <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">Wed 7pm</span>
                       </div>
@@ -455,7 +455,7 @@ export default function Page() {
                         <div className="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center text-xs">S</div>
                         <div className="flex-1">
                           <div className="bg-gray-100 rounded-2xl px-4 py-2">
-                            <p className="text-sm text-gray-900">I'll bring some herbal tea for after meditation 🍵</p>
+                            <p className="text-sm text-gray-900">I&apos;ll bring some herbal tea for after meditation 🍵</p>
                           </div>
                           <p className="text-xs text-gray-500 mt-1">Sarah • 2 min ago</p>
                         </div>
@@ -465,7 +465,7 @@ export default function Page() {
                         <div className="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center text-xs">M</div>
                         <div className="flex-1">
                           <div className="bg-gray-100 rounded-2xl px-4 py-2">
-                            <p className="text-sm text-gray-900">Perfect! Here's a photo from last Saturday's sunset meditation ✨</p>
+                            <p className="text-sm text-gray-900">Perfect! Here&apos;s a photo from last Saturday&apos;s sunset meditation ✨</p>
                             <div className="mt-2 bg-gradient-to-br from-orange-200 to-purple-200 rounded-lg h-20 flex items-center justify-center">
                               <span className="text-xs text-gray-600">🌅 Beautiful sunset</span>
                             </div>
