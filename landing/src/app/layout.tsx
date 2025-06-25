@@ -57,6 +57,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script async src="https://tally.so/widgets/embed.js"></script>
+        <script
+          defer
+          data-website-id="685c559b731dd38247fe7ed3"
+          data-domain="thetamind.community"
+          src="https://datafa.st/js/script.js">
+        </script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
