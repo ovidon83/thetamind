@@ -500,18 +500,101 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Simple Footer */}
-      <footer className="relative z-10 px-6 py-8 bg-gray-900/80 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <div className="w-6 h-6 bg-purple-600 rounded flex items-center justify-center">
-              <span className="text-white font-bold text-sm">θ</span>
+      {/* Footer with Contact Form */}
+      <footer className="relative z-10 px-6 py-16 bg-gradient-to-br from-gray-900 via-slate-900 to-purple-900/20 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto">
+          
+          {/* Contact Form Section */}
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
+            
+            {/* Left Side - Brand & Info */}
+            <div>
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold">θ</span>
+                </div>
+                <span className="font-bold text-white text-xl">ThetaMind</span>
+              </div>
+              
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                Building bridges between souls, one spiritual circle at a time. Join the global awakening through local community.
+              </p>
+              
+              <div className="flex flex-wrap gap-3">
+                <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-500/30">🌍 Global Network</span>
+                <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-500/30">🧘‍♀️ Spiritual Circles</span>
+                <span className="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-500/30">❤️ Community</span>
+              </div>
             </div>
-            <span className="font-bold text-white">ThetaMind</span>
+            
+            {/* Right Side - Contact Form */}
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+              <p className="text-gray-300 mb-6">Have questions or want to connect? We&apos;d love to hear from you!</p>
+              
+              <form 
+                action="https://formspree.io/ovidon83@gmail.com" 
+                method="POST"
+                className="space-y-4"
+              >
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                    placeholder="Your name"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    required
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent backdrop-blur-sm transition-all duration-200 resize-none"
+                    placeholder="Tell us about your spiritual journey or ask us anything..."
+                  ></textarea>
+                </div>
+                
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-500 hover:to-blue-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-transparent"
+                >
+                  Send Message ✨
+                </button>
+              </form>
+            </div>
           </div>
-          <div className="text-gray-400 text-sm">
-            © 2024 ThetaMind. Building the future of spiritual community.
+          
+          {/* Bottom Copyright */}
+          <div className="border-t border-white/10 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+              <div className="text-gray-400 text-sm mb-4 md:mb-0">
+                © 2024 ThetaMind. Building the future of spiritual community.
+              </div>
+              <div className="flex items-center gap-6 text-sm text-gray-400">
+                <span>Made with ❤️ for conscious beings</span>
+              </div>
+            </div>
           </div>
+          
         </div>
       </footer>
 
